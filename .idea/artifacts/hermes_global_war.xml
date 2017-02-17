@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hermes-global:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="hermes-global-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="hermes-global:war exploded" />
+    </root>
+  </artifact>
+</component>
