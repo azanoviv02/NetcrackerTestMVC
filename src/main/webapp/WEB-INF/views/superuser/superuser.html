@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome to Hermes Transport Company website!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header">Header</div>
+<div class="container">
+    <div class="text-center">
+        <h1>SuperUser</h1>
+        <p class="lead">
+            You can do everything you want!
+        </p>
+    </div>
+    <div class="form-narrow form-horizontal coupled-borders wide-link-buttons">
+            <h2 class="centered smaller-margin">Admin</h2>
+            <p>
+                <a href="/addaccount" th:href="@{/addaccount}" class="btn btn-success btn-lg">Add new account</a>
+            </p>
+            <p>
+                <a href="/accounts" th:href="@{/accounts}" class="btn btn-success btn-lg">View accounts</a>
+            </p>
+    </div>
+    <div th:replace="fragments/footer :: footer">2013 The Static Templates</div>
+</div>
+</body>
+</html>

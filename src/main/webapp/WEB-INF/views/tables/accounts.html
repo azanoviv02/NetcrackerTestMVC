@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Currently registered accounts</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header">Header</div>
+<!--<div th:replace="fragments/header :: header">Header</div>-->
+<div class="container table-legend">
+    <div class="text-center">
+        <h1>View accounts</h1>
+        <p class="lead">
+            All currently registered accounts:
+        </p>
+    </div>
+    <div class="form-narrow form-horizontal coupled-borders coupled-upper no-padding">
+
+        <div th:if="${not #lists.isEmpty(admins)}">
+            <h3 class="centered smaller-margin">Admins</h3>
+            <table class="full-width hermes-table centered-headers high-row">
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                </tr>
+                <th:block th:each="account : ${admins}">
+                    <tr>
+                        <td th:text="${account.login}">Username</td>
+                        <td th:text="${account.name}">Name</td>
+                    </tr>
+                </th:block>
+            </table>
+            <div class="buffer"></div>
+        </div>
+
+        <div th:if="${not #lists.isEmpty(drivers)}">
+            <h3 class="centered smaller-margin">Drivers</h3>
+            <table class="full-width hermes-table centered-headers high-row">
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                </tr>
+                <th:block th:each="account : ${drivers}">
+                    <tr>
+                        <td th:text="${account.login}">Username</td>
+                        <td th:text="${account.name}">Name</td>
+                    </tr>
+                </th:block>
+            </table>
+            <div class="buffer"></div>
+        </div>
+
+        <div th:if="${not #lists.isEmpty(managers)}">
+            <h3 class="centered smaller-margin">Managers</h3>
+            <table class="full-width hermes-table centered-headers high-row">
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                </tr>
+                <th:block th:each="account : ${managers}">
+                    <tr>
+                        <td th:text="${account.login}">Username</td>
+                        <td th:text="${account.name}">Name</td>
+                    </tr>
+                </th:block>
+            </table>
+            <div class="buffer"></div>
+        </div>
+
+
+        <div th:if="${not #lists.isEmpty(planners)}">
+            <h3 class="centered smaller-margin">Planners</h3>
+            <table class="full-width hermes-table centered-headers high-row">
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                </tr>
+                <th:block th:each="account : ${planners}">
+                    <tr>
+                        <td th:text="${account.login}">Username</td>
+                        <td th:text="${account.name}">Name</td>
+                    </tr>
+                </th:block>
+            </table>
+            <div class="buffer"></div>
+        </div>
+
+        <div th:if="${not #lists.isEmpty(informers)}">
+            <h3 class="centered smaller-margin">Informers</h3>
+            <table class="full-width hermes-table centered-headers high-row">
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                </tr>
+                <th:block th:each="account : ${informers}">
+                    <tr>
+                        <td th:text="${account.login}">Username</td>
+                        <td th:text="${account.name}">Name</td>
+                    </tr>
+                </th:block>
+            </table>
+        </div>
+    </div>
+    <div class="form-narrow-trans">
+        <a href="/" th:href="@{/}" class="btn btn-success btn-lg coupled-lower full-width btn-finish-order">Back</a>
+    </div>
+    <div th:replace="fragments/footer :: footer">&copy; 2013 The Static Templates</div>
+</div>
+</body>
+</html>

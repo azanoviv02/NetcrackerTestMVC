@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Signup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+    <link href="../../../resources/css/core.css" rel="stylesheet" media="screen" th:href="@{/resources/css/core.css}" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div th:replace="fragments/header :: header">Header</div>
+<form class="" method="post" th:action="@{/addaccount}" th:object="${signupForm}">
+    <div class="container">
+        <div class="text-center">
+            <div class="text-center">
+                <h1>Add account</h1>
+            </div>
+        </div>
+        <div class="form-narrow form-horizontal coupled-upper coupled-borders">
+        <!--/* Show general error message when form contains errors */-->
+            <th:block th:if="${#fields.hasErrors('${signupForm.*}')}">
+                <div th:replace="fragments/alert :: alert (type='danger', message='Form contains errors. Please try again.')">Alert</div>
+            </th:block>
+            <fieldset>
+                <legend>Please, add all account info</legend>
+                <div class="form-group" th:classappend="${#fields.hasErrors('login')}? 'has-error'">
+                    <label for="login" class="col-lg-2 control-label">Login</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="login" placeholder="Login" th:field="*{login}" />
+                        <span class="help-block" th:if="${#fields.hasErrors('login')}" th:errors="*{login}">Incorrect login</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="${#fields.hasErrors('password')}? 'has-error'">
+                    <label for="password" class="col-lg-2 control-label">Password</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="password" placeholder="Password" th:field="*{password}"/>
+                        <span class="help-block" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Incorrect password</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="${#fields.hasErrors('name')}? 'has-error'">
+                    <label for="name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="name" placeholder="Name" th:field="*{name}"/>
+                        <span class="help-block" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Incorrect name</span>
+                    </div>
+                </div>
+                <div class="form-group" th:classappend="${#fields.hasErrors('role')}? 'has-error'">
+                    <label for="role" class="col-lg-2 control-label">Role</label>
+                    <div class="col-lg-10">
+                        <select id="segmentoSel" class="form-control" th:field="*{role}">
+                            <option value="" selected="selected" id="role">Role</option>
+                            <option th:each="segmento : ${T(com.hermes.core.domain.accounts.Role).values()}" th:value="${segmento}" th:text="${segmento}">Roles</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="form-narrow-trans">
+            <button type="submit" class="btn btn-success btn-lg coupled-lower full-width btn-finish-order">Add account</button>
+        </div>
+    </div>
+</form>
+</body>
+</html>

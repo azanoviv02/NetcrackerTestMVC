@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="262.0" y="162.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.hasLogin</node>
+    <node x="194.06944444444443" y="0.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.Specification</node>
+    <node x="164.56944444444443" y="81.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractSpecification</node>
+    <node x="0.0" y="162.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractWhich</node>
+    <node x="145.0" y="243.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.UserWhich</node>
+    <node x="154.0" y="162.0">com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.isAdmin</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.hasLogin" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractSpecification">
+      <point x="0.0" y="-15.5" />
+      <point x="309.5" y="137.0" />
+      <point x="299.56944444444446" y="137.0" />
+      <point x="45.0" y="15.5" />
+    </edge>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.isAdmin" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractSpecification">
+      <point x="0.0" y="-15.5" />
+      <point x="198.0" y="137.0" />
+      <point x="209.56944444444443" y="137.0" />
+      <point x="-45.0" y="15.5" />
+    </edge>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.UserWhich" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.isAdmin">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.UserWhich" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.hasLogin">
+      <point x="35.33333333333334" y="-15.5" />
+      <point x="233.33333333333331" y="218.0" />
+      <point x="309.5" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.users.UserWhich" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractWhich">
+      <point x="-35.33333333333337" y="-15.5" />
+      <point x="162.66666666666663" y="218.0" />
+      <point x="67.0" y="218.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.AbstractSpecification" target="com.netcracker.edu.azanov.hermes.infrastructure.dataaccess.specifications.Specification">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="178.5" y="137.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

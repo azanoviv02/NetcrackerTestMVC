@@ -1,0 +1,167 @@
+body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-narrow {
+    max-width: 490px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.form-extended{
+    max-width: 735px;
+}
+
+    /*//////////////////////////////// Added By Ivan ////////////////////////////////*/
+
+.form-narrow-trans {
+    max-width: 490px;
+    padding: 0px 0px 0px;
+    margin: 0 auto 20px;
+}
+
+.form-extended {
+    max-width: 735px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.coupled-upper{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.coupled-lower {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-upper: 0;
+    border-top: 0;
+}
+
+.no-upper-margin{
+    margin-upper: 0;
+}
+
+.coupled-borders {
+    border-right: 7px solid #5cb85c;
+    border-left: 7px solid #5cb85c;
+}
+
+.button-border {
+    border-bottom: 7px solid #5cb85c;
+}
+
+.btn-next-cargo{
+    font-size: 18px;
+}
+
+.btn-finish-order{
+    font-size: 30px;
+}
+
+.legendless{
+    margin-top: 50px;
+}
+
+.fixed-min-height{
+    min-height: 460px;
+}
+
+.hermes-table{
+    table-layout: fixed;
+    text-align: center;
+    font-size: 18px;
+}
+
+.centered{
+    text-align: center;
+}
+
+table.centered-headers th{
+    text-align: center;
+}
+
+table.high-row tr, .high-row{
+    line-height: 30px;
+}
+
+div.table-legend h3{
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #5cb85c;
+}
+
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.small-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.table-header{
+    background-colour: #5cb85c;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+.buffer{
+    padding-top: 35px;
+}
+
+.smaller-margin{
+    margin-bottom: 10px;
+}
+
+div.wide-link-buttons a{
+    width: 100%;
+}
+
+div.order-info {
+    margin-bottom: 20px;
+    margin-left: 33px;
+    margin-right: 30px;
+}
+
+div.order-info p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+}
+
+div.whole-order {
+    margin-top: 20px;
+    border-top: 3px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    background-color: white;
+    /*-webkit-box-shadow: inset 0px 0px 5px 3px #ccc;*/
+    /*-moz-box-shadow:    inset 0px 0px 5px 3px #ccc;*/
+    /*box-shadow:         inset 0px 0px 5px 3px #ccc;*/
+}
+
+div.contrast-colour{
+}
+
+.status {
+    font-size: 150%;
+}

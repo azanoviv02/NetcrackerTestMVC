@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="598.0" y="101.0">com.hermes.infrastructure.dataaccess.repositories.UserRepository</node>
+    <node x="1110.25" y="212.0">com.hermes.infrastructure.dataaccess.repositories.OrderRepositoryImpl</node>
+    <node x="443.99999999999994" y="212.0">com.hermes.infrastructure.dataaccess.repositories.CargoRepositoryImpl</node>
+    <node x="1556.75" y="101.0">com.hermes.infrastructure.dataaccess.repositories.VehicleRepository</node>
+    <node x="220.0" y="212.0">com.hermes.infrastructure.dataaccess.repositories.MilestoneRepositoryImpl</node>
+    <node x="855.3333333333333" y="212.0">com.hermes.infrastructure.dataaccess.repositories.EmployeeRepositoryImpl</node>
+    <node x="1495.25" y="212.0">com.hermes.infrastructure.dataaccess.repositories.VehicleRepositoryImpl</node>
+    <node x="668.3333333333333" y="212.0">com.hermes.infrastructure.dataaccess.repositories.UserRepositoryImpl</node>
+    <node x="1169.5" y="101.0">com.hermes.infrastructure.dataaccess.repositories.OrderRepository</node>
+    <node x="184.0" y="101.0">com.hermes.infrastructure.dataaccess.repositories.MilestoneRepository</node>
+    <node x="1307.25" y="212.0">com.hermes.infrastructure.dataaccess.repositories.HaulRepositoryImpl</node>
+    <node x="15.0" y="288.0">com.hermes.infrastructure.dataaccess.repositories.GenericDao</node>
+    <node x="0.0" y="101.0">com.hermes.infrastructure.dataaccess.repositories.PlaceRepository</node>
+    <node x="414.74999999999994" y="101.0">com.hermes.infrastructure.dataaccess.repositories.CargoRepository</node>
+    <node x="770.875" y="0.0">com.hermes.infrastructure.dataaccess.repositories.GenericRepository</node>
+    <node x="28.0" y="212.0">com.hermes.infrastructure.dataaccess.repositories.PlaceRepositoryImpl</node>
+    <node x="1364.25" y="101.0">com.hermes.infrastructure.dataaccess.repositories.HaulRepository</node>
+    <node x="964.75" y="101.0">com.hermes.infrastructure.dataaccess.repositories.EmployeeRepository</node>
+    <node x="755.875" y="101.0">com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl</node>
+    <node x="0.0" y="369.0">com.hermes.infrastructure.dataaccess.repositories.GenericDaoImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.PlaceRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="71.0" y="51.0" />
+      <point x="779.6527777777778" y="51.0" />
+      <point x="-70.22222222222217" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.MilestoneRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="271.0" y="61.0" />
+      <point x="797.2083333333333" y="61.0" />
+      <point x="-52.66666666666663" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.EmployeeRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="-50.75" y="-15.5" />
+      <point x="906.0833333333333" y="192.0" />
+      <point x="861.625" y="192.0" />
+      <point x="11.75" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.OrderRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="-44.25" y="-15.5" />
+      <point x="1154.5" y="182.0" />
+      <point x="885.125" y="182.0" />
+      <point x="35.25" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.UserRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="41.75" y="-15.5" />
+      <point x="793.5833333333333" y="192.0" />
+      <point x="838.125" y="192.0" />
+      <point x="-11.75" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.MilestoneRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.MilestoneRepository">
+      <point x="-51.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.CargoRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="5.6843418860808015E-14" y="-15.5" />
+      <point x="488.25" y="71.0" />
+      <point x="814.7638888888889" y="71.0" />
+      <point x="-35.111111111111086" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.HaulRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="-42.0" y="-15.5" />
+      <point x="1349.25" y="172.0" />
+      <point x="908.625" y="172.0" />
+      <point x="58.75" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.VehicleRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.VehicleRepository">
+      <point x="46.5" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.PlaceRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="43.0" y="-15.5" />
+      <point x="157.0" y="162.0" />
+      <point x="767.625" y="162.0" />
+      <point x="-82.25" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.VehicleRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="-46.5" y="-15.5" />
+      <point x="1541.75" y="162.0" />
+      <point x="932.125" y="162.0" />
+      <point x="82.25" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.EmployeeRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.EmployeeRepository">
+      <point x="50.75" y="-15.5" />
+      <point x="1007.5833333333333" y="192.0" />
+      <point x="1051.25" y="192.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.PlaceRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.PlaceRepository">
+      <point x="-43.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.HaulRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="1433.25" y="61.0" />
+      <point x="902.5416666666667" y="61.0" />
+      <point x="52.66666666666674" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.GenericDaoImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericDao">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.OrderRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.OrderRepository">
+      <point x="44.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.CargoRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="44.25" y="-15.5" />
+      <point x="576.75" y="182.0" />
+      <point x="814.625" y="182.0" />
+      <point x="-35.25" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.HaulRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.HaulRepository">
+      <point x="42.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.VehicleRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="1634.75" y="51.0" />
+      <point x="920.0972222222222" y="51.0" />
+      <point x="70.22222222222217" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.EmployeeRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="1051.25" y="81.0" />
+      <point x="867.4305555555554" y="81.0" />
+      <point x="17.555555555555543" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.OrderRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="1243.0" y="71.0" />
+      <point x="884.9861111111111" y="71.0" />
+      <point x="35.111111111111086" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.MilestoneRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepositoryImpl">
+      <point x="51.0" y="-15.5" />
+      <point x="373.0" y="172.0" />
+      <point x="791.125" y="172.0" />
+      <point x="-58.75" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.CargoRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.CargoRepository">
+      <point x="-44.25" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.UserRepository" target="com.hermes.infrastructure.dataaccess.repositories.GenericRepository">
+      <point x="0.0" y="-15.5" />
+      <point x="666.5" y="81.0" />
+      <point x="832.3194444444443" y="81.0" />
+      <point x="-17.555555555555543" y="15.5" />
+    </edge>
+    <edge source="com.hermes.infrastructure.dataaccess.repositories.UserRepositoryImpl" target="com.hermes.infrastructure.dataaccess.repositories.UserRepository">
+      <point x="-41.75" y="-15.5" />
+      <point x="710.0833333333333" y="152.0" />
+      <point x="666.5" y="152.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4679746105020196" x="856.5" y="200.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
